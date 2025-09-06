@@ -23,7 +23,7 @@ export default function MathQuiz() {
     return (
       <div className="p-6 bg-white rounded-2xl shadow-lg text-center">
         <h2 className="text-2xl font-bold text-green-600">
-          🎉 Done! Your score: {score}
+          Done! Your score: {score}
         </h2>
         <p className="mt-2 text-gray-500">XP earned: {score * 2}</p>
       </div>
