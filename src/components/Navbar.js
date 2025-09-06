@@ -27,9 +27,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link 
           to="/" 
-          className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent hover:from-blue-300 hover:via-purple-300 hover:to-indigo-300 transition-all duration-300"
+          className="flex items-center space-x-2 group"
         >
-          EduGamify
+          <img 
+            src="/logo.jpg" 
+            alt="EduGamify Logo" 
+            className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300 rounded-full"
+          />
+          <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent hover:from-blue-300 hover:via-purple-300 hover:to-indigo-300 transition-all duration-300">
+            EduGamify
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -38,6 +45,7 @@ export default function Navbar() {
           {navLink("/math", "Mathematics")}
           {navLink("/physics", "Physics")}
           {navLink("/science", "Science")}
+          {navLink("/team", "Our Team")}
         </div>
 
         {/* Hamburger Button */}
@@ -57,9 +65,10 @@ export default function Navbar() {
           {navLink("/", "Home", true)}
           {navLink("/math", "Mathematics", true)}
           {navLink("/physics", "Physics", true)}
-          {navLink("/science", "Science", true)}
+          {navLink("/team", "Our Team", true)}
         </div>
       </div>
+
     </nav>
   );
 }
