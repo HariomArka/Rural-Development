@@ -1,0 +1,63 @@
+{
+  "subject": "mathematics",
+  "grade": "sixth",
+  "levels": [
+    {
+      "level": "basic",
+      "quizzes": [
+        {
+          "id": 1,
+          "title": "Basic Math Quiz 1",
+          "questions": [
+            { "question": "What is 2 + 3?", "options": ["4", "5", "6", "3"], "answer": "5" },
+            { "question": "What is 10 - 4?", "options": ["6", "7", "4", "5"], "answer": "6" },
+            { "question": "What is 5 × 2?", "options": ["7", "10", "12", "15"], "answer": "10" },
+            { "question": "What is 12 ÷ 3?", "options": ["4", "5", "6", "3"], "answer": "4" },
+            { "question": "What is the next number in 2, 4, 6, __?", "options": ["7", "8", "9", "10"], "answer": "8" },
+            { "question": "What is half of 20?", "options": ["5", "10", "15", "25"], "answer": "10" },
+            { "question": "What is 0 multiplied by any number?", "options": ["1", "0", "The number itself", "Undefined"], "answer": "0" },
+            { "question": "What is 100 + 200?", "options": ["300", "250", "400", "200"], "answer": "300" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "advanced",
+      "quizzes": [
+        {
+          "id": 2,
+          "title": "Advanced Math Quiz 1",
+          "questions": [
+            { "question": "What is (5 + 3) × 2?", "options": ["16", "13", "10", "15"], "answer": "16" },
+            { "question": "What is the square of 6?", "options": ["12", "36", "18", "24"], "answer": "36" },
+            { "question": "What is 15% of 200?", "options": ["20", "30", "25", "35"], "answer": "30" },
+            { "question": "What is 81 ÷ 9?", "options": ["9", "8", "7", "10"], "answer": "9" },
+            { "question": "What is the value of 2³?", "options": ["8", "6", "4", "9"], "answer": "8" },
+            { "question": "What is the perimeter of a square with side 5 units?", "options": ["25", "20", "10", "15"], "answer": "20" },
+            { "question": "What is 1000 ÷ 25?", "options": ["25", "40", "50", "30"], "answer": "40" },
+            { "question": "What is the next number in the sequence: 5, 10, 15, __?", "options": ["20", "25", "30", "35"], "answer": "20" }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "high-flyers",
+      "quizzes": [
+        {
+          "id": 3,
+          "title": "High Flyers Math Quiz 1",
+          "questions": [
+            { "question": "What is the value of (3 × (2 + 5) ÷ 7)?", "options": ["3", "2", "1", "7"], "answer": "3" },
+            { "question": "What is the square root of 144?", "options": ["12", "14", "16", "18"], "answer": "12" },
+            { "question": "If x + 3 = 10, what is x?", "options": ["7", "13", "10", "3"], "answer": "7" },
+            { "question": "What is 45 ÷ (5 + 4)?", "options": ["5", "9", "1", "10"], "answer": "5" },
+            { "question": "What is (8 × 6) ÷ (3 × 2)?", "options": ["8", "6", "9", "12"], "answer": "8" },
+            { "question": "What is the area of a rectangle with length 8 and width 5?", "options": ["40", "13", "45", "20"], "answer": "40" },
+            { "question": "What is the result of (15 - 5) × (10 ÷ 2)?", "options": ["50", "25", "100", "10"], "answer": "50" },
+            { "question": "What is 2⁴ - 2²?", "options": ["12", "14", "8", "6"], "answer": "12" }
+          ]
+        }
+      ]
+    }
+  ]
+}

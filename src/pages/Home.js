@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { Book, Calculator, Beaker, Atom, ChevronRight } from "lucide-react";
+import expertsData from "../data/grade.json";
 
 export default function Home() {
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const fullText = "Welcome to EduGamify";
+
+  const navigate = useNavigate();
+
+  const handleSubjectClick = (gradeLink, subjectKey) => {
+    const data = expertsData[gradeLink][subjectKey];
+    navigate(`/${gradeLink}/${subjectKey}`, { state: data });
+  };
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -96,7 +104,7 @@ export default function Home() {
           with videos, quizzes, and progress tracking.
         </p>
       </div>
-      
+
       {/* Class Selection Section */}
       <div className="relative bg-gradient-to-b from-black/90 to-gray-900 py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -114,7 +122,7 @@ export default function Home() {
                   {grade.grade}
                 </h4>
                 <div className="space-y-3">
-                  {grade.subjects.map((subject, idx) => (
+                  {/* {grade.subjects.map((subject, idx) => (
                     <Link
                       key={idx}
                       to={`/${grade.link}/${subject.toLowerCase().replace(' ', '-')}`}
@@ -126,7 +134,24 @@ export default function Home() {
                       </div>
                       <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
                     </Link>
-                  ))}
+                  ))} */}
+
+                  {grade.subjects.map((subject, idx) => {
+                    const subjectKey = subject.toLowerCase().replace(' ', '_');
+                    return (
+                      <div
+                        key={idx}
+                        onClick={() => handleSubjectClick(grade.link, subjectKey)}
+                        className="cursor-pointer flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-white/15 transition-all duration-300"
+                      >
+                        <div className="flex items-center space-x-3 text-white">
+                          {getSubjectIcon(subject)}
+                          <span>{subject}</span>
+                        </div>
+                        <ChevronRight className="w-5 h-5 text-gray-400 transition-colors" />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             ))}
