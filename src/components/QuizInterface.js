@@ -11,6 +11,33 @@ export default function QuizInterface() {
   const [selectedOption, setSelectedOption] = useState("");
   const [showExplanation, setShowExplanation] = useState(false);
   const [score, setScore] = useState(0);
+  const [isCorrect, setIsCorrect] = useState(null); // track correctness
+  const [attempted, setAttempted] = useState(false); // track if user has tried
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const correctAnswer = questions[currentIndex].answer.trim().toLowerCase();
+    const userAnswer = selectedOption.trim().toLowerCase();
+
+    setAttempted(true);
+
+    if (userAnswer === correctAnswer) {
+      setScore(prev => prev + 1);
+      setIsCorrect(true);
+      setShowExplanation(true); // only show explanation when correct
+    } else {
+      setIsCorrect(false);
+      setShowExplanation(false); // don’t show explanation yet
+    }
+  };
+
+  const handleNext = () => {
+    setCurrentIndex(prev => prev + 1);
+    setSelectedOption("");
+    setShowExplanation(false);
+    setIsCorrect(null);
+    setAttempted(false);
+  };
 
   const displayGrade = grade.charAt(0).toUpperCase() + grade.slice(1);
   const displaySubject = subject.replace('_', ' ').split(' ')
@@ -26,23 +53,24 @@ export default function QuizInterface() {
     );
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const correctAnswer = questions[currentIndex].answer.trim().toLowerCase();
-    const userAnswer = selectedOption.trim().toLowerCase();
 
-    if (userAnswer === correctAnswer) {
-      setScore(prev => prev + 1);
-    }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const correctAnswer = questions[currentIndex].answer.trim().toLowerCase();
+  //   const userAnswer = selectedOption.trim().toLowerCase();
 
-    setShowExplanation(true);
-  };
+  //   if (userAnswer === correctAnswer) {
+  //     setScore(prev => prev + 1);
+  //   }
 
-  const handleNext = () => {
-    setCurrentIndex(prev => prev + 1);
-    setSelectedOption("");
-    setShowExplanation(false);
-  };
+  //   setShowExplanation(true);
+  // };
+
+  // const handleNext = () => {
+  //   setCurrentIndex(prev => prev + 1);
+  //   setSelectedOption("");
+  //   setShowExplanation(false);
+  // };
 
   const isLastQuestion = currentIndex === questions.length - 1;
 
@@ -78,21 +106,78 @@ export default function QuizInterface() {
                 </label>
               ))}
 
-              {!showExplanation ? (
+              {/* {!showExplanation ? (
                 <button type="submit" className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
                   Submit
                 </button>
               ) : (
+                // <div className="mt-4">
+                //   <p className="text-gray-700 mb-2">
+                //     Correct Answer: <span className="font-semibold">{questions[currentIndex].answer}</span>
+                //   </p>
+                //   <p className="italic text-gray-500">{questions[currentIndex].explanation}</p>
+                //   <button onClick={handleNext} className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+                //     Next Question
+                //   </button>
+                // </div>
                 <div className="mt-4">
-                  <p className="text-gray-700 mb-2">
+                  {isCorrect ? (
+                    <p className="text-green-600 font-bold">✅ Correct Ans!</p>
+                  ) : (
+                    <p className="text-red-600 font-bold">❌ Little wrong, try again.</p>
+                  )}
+
+                  <p className="text-gray-700 mt-2">
                     Correct Answer: <span className="font-semibold">{questions[currentIndex].answer}</span>
                   </p>
                   <p className="italic text-gray-500">{questions[currentIndex].explanation}</p>
-                  <button onClick={handleNext} className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+
+                  <button
+                    onClick={handleNext}
+                    className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+                  >
                     Next Question
                   </button>
                 </div>
+
+              )} */}
+              {!attempted ? (
+                <button
+                  type="submit"
+                  className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+                >
+                  Submit
+                </button>
+              ) : (
+                <div className="mt-4">
+                  {isCorrect ? (
+                    <>
+                      <p className="text-green-600 font-bold">✅ Correct Ans!</p>
+                      <p className="text-gray-700 mt-2">
+                        Correct Answer: <span className="font-semibold">{questions[currentIndex].answer}</span>
+                      </p>
+                      <p className="italic text-gray-500">{questions[currentIndex].explanation}</p>
+                      <button
+                        onClick={handleNext}
+                        className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+                      >
+                        Next Question
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-red-600 font-bold">❌ Little wrong, try again.</p>
+                      <button
+                        type="submit"
+                        className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+                      >
+                        Retry
+                      </button>
+                    </>
+                  )}
+                </div>
               )}
+
             </form>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">

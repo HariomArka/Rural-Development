@@ -30,12 +30,12 @@ export default function Navbar() {
           className="flex items-center space-x-2 group"
         >
           <img 
-            src="/logo.jpg" 
+            src="/logo.png" 
             alt="EduGamify Logo" 
             className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300 rounded-full"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent hover:from-blue-300 hover:via-purple-300 hover:to-indigo-300 transition-all duration-300">
-            EduGamify
+            Gurukul
           </span>
         </Link>
 

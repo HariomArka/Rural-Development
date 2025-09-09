@@ -6,7 +6,7 @@ import expertsData from "../data/grade.json";
 export default function Home() {
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = "Welcome to EduGamify";
+  const fullText = "Welcome to Gurukul";
 
   const navigate = useNavigate();
 

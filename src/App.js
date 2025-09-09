@@ -8,8 +8,11 @@ import ContactUs from "./pages/Contact";
 import QuizPage from './components/QuizPage';
 import VideoLessonsPage from './components/VideoLessonsPage';
 
-import ProjectileMotionGame from "./games/eleventh/Projectile";
+// import ProjectileMotionGame from "./games/eleventh/Projectile";
 import QuadraticSolverGame from "./games/tenth/Quadratic";
+import MathRunnerGame from "./games/sixth/mathematics/basic";
+import GeographyExplorerGame from "./games/sixth/geography/basic";
+import GeographyAdventure from "./games/sixth/geography/intermediate";
 
 import Quizzes from "./components/Quizzes";
 import QuizInterface from './components/QuizInterface';
@@ -37,7 +40,9 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<ContactUs />} />
 
-        <Route path="/pro" element={<ProjectileMotionGame />} />
+
+        {/* //game trials */}
+        <Route path="/pro" element={<GeographyAdventure />} />
         <Route path="/quad" element={<QuadraticSolverGame />} />
 
 

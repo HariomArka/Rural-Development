@@ -4,20 +4,20 @@ import { Users, Linkedin, Mail, ExternalLink, MapPin, Award } from "lucide-react
 export default function TeamPage() {
   const teamMembers = [
     {
-      name: "Dr. Sarah Johnson",
+      name: "Mr Arka Ghosh",
       position: "Project Lead",
-      institute: "Stanford University",
-      image: "/elon.jpg",
+      institute: "IIT Kharagpur",
+      image: "/arkaghosh.jpg",
       linkedin: "https://linkedin.com/in/sarah-johnson",
       email: "sarah.johnson@stanford.edu",
       expertise: "Educational Technology",
-      location: "California, USA"
+      location: "Kharagpur, West Bengal, India"
     },
     {
-      name: "Prof. Raj Patel",
+      name: "Ms Soumily Nayek",
       position: "Research Head",
-      institute: "MIT",
-      image: "/elon.jpg",
+      institute: "IIT Kharagpur",
+      image: "/soumily.jpg",
       linkedin: "https://linkedin.com/in/raj-patel",
       email: "raj.patel@mit.edu",
       expertise: "Machine Learning",
