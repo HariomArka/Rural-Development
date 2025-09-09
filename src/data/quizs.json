@@ -1,6 +1,6 @@
 {
   "sixth": {
-    "physics": {
+    "basic-science": {
       "Motion": [
         {
           "type": "mcq",
@@ -24,9 +24,7 @@
           "answer": "Newton",
           "explanation": "The SI unit of force is Newton (N), defined as kg·m/s²."
         }
-      ]
-    },
-    "chemistry": {
+      ],
       "Matter": [
         {
           "type": "saq",
@@ -43,9 +41,7 @@
           "answer": "Salt and water",
           "explanation": "Salt dissolves completely in water forming a homogeneous mixture."
         }
-      ]
-    },
-    "biology": {
+      ],
       "Plants": [
         {
           "type": "saq",

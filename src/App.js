@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 // import useScrollToTop from "./hooks/scrollToTop"
 import Home from "./pages/Home";
 import Team from "./pages/Team";
+import ContactUs from "./pages/Contact";
 import QuizPage from './components/QuizPage';
 import VideoLessonsPage from './components/VideoLessonsPage';
 
@@ -34,6 +35,7 @@ function App() {
 
         {/* Static Team Page */}
         <Route path="/team" element={<Team />} />
+        <Route path="/contact" element={<ContactUs />} />
 
         <Route path="/pro" element={<ProjectileMotionGame />} />
         <Route path="/quad" element={<QuadraticSolverGame />} />

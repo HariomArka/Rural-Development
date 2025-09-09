@@ -42,9 +42,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-3">
           {navLink("/", "Home")}
-          {navLink("/math", "Mathematics")}
-          {navLink("/physics", "Physics")}
-          {navLink("/science", "Science")}
+          {navLink("/contact", "Contact Us")}
           {navLink("/team", "Our Team")}
         </div>
 
