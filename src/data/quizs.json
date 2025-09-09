@@ -1,0 +1,132 @@
+{
+  "sixth": {
+    "physics": {
+      "Motion": [
+        {
+          "type": "mcq",
+          "question": "What is the unit of speed?",
+          "options": ["Meter", "Meter per second", "Kilogram", "Newton"],
+          "answer": "Meter per second",
+          "explanation": "Speed is defined as distance traveled per unit time, hence its unit is meters per second (m/s)."
+        },
+        {
+          "type": "saq",
+          "question": "Define motion.",
+          "answer": "Motion is the change in position of a body with respect to time.",
+          "explanation": "A body is said to be in motion if its position changes with respect to time."
+        }
+      ],
+      "Force": [
+        {
+          "type": "mcq",
+          "question": "What is the SI unit of force?",
+          "options": ["Joule", "Newton", "Watt", "Pascal"],
+          "answer": "Newton",
+          "explanation": "The SI unit of force is Newton (N), defined as kg·m/s²."
+        }
+      ]
+    },
+    "chemistry": {
+      "Matter": [
+        {
+          "type": "saq",
+          "question": "What are the three states of matter?",
+          "answer": "Solid, liquid, and gas.",
+          "explanation": "Matter typically exists in three states: solid, liquid, and gas."
+        }
+      ],
+      "Mixtures": [
+        {
+          "type": "mcq",
+          "question": "Which of the following is a homogeneous mixture?",
+          "options": ["Salt and water", "Sand and water", "Oil and water", "Iron filings and sulfur"],
+          "answer": "Salt and water",
+          "explanation": "Salt dissolves completely in water forming a homogeneous mixture."
+        }
+      ]
+    },
+    "biology": {
+      "Plants": [
+        {
+          "type": "saq",
+          "question": "What is photosynthesis?",
+          "answer": "Photosynthesis is the process by which green plants prepare food using sunlight, carbon dioxide, and water.",
+          "explanation": "In photosynthesis, plants use sunlight to convert CO₂ and H₂O into glucose and oxygen."
+        }
+      ],
+      "Human Body": [
+        {
+          "type": "mcq",
+          "question": "Which organ pumps blood throughout the body?",
+          "options": ["Liver", "Lungs", "Heart", "Kidney"],
+          "answer": "Heart",
+          "explanation": "The heart pumps blood through the circulatory system to supply oxygen and nutrients."
+        }
+      ]
+    },
+    "mathematics": {
+      "Arithmetic": [
+        {
+          "type": "mcq",
+          "question": "What is 7 + 5?",
+          "options": ["11", "12", "13", "10"],
+          "answer": "12",
+          "explanation": "Adding 7 and 5 gives 12."
+        }
+      ],
+      "Geometry": [
+        {
+          "type": "saq",
+          "question": "What is the sum of interior angles of a triangle?",
+          "answer": "180 degrees.",
+          "explanation": "The sum of interior angles of any triangle is always 180 degrees."
+        }
+      ]
+    }
+  },
+
+  "seventh": {
+    "physics": {
+      "Light": [
+        {
+          "type": "mcq",
+          "question": "What is the speed of light in vacuum?",
+          "options": ["3 × 10^8 m/s", "1.5 × 10^8 m/s", "3 × 10^6 m/s", "1 × 10^8 m/s"],
+          "answer": "3 × 10^8 m/s",
+          "explanation": "The speed of light in vacuum is approximately 3 × 10^8 meters per second."
+        }
+      ]
+    },
+    "chemistry": {
+      "Atoms": [
+        {
+          "type": "saq",
+          "question": "What is an atom?",
+          "answer": "The atom is the smallest unit of matter that retains the properties of an element.",
+          "explanation": "An atom consists of a nucleus with protons and neutrons, surrounded by electrons."
+        }
+      ]
+    },
+    "biology": {
+      "Cells": [
+        {
+          "type": "mcq",
+          "question": "What is the basic unit of life?",
+          "options": ["Organ", "Tissue", "Cell", "Organ system"],
+          "answer": "Cell",
+          "explanation": "The cell is the basic structural and functional unit of all living organisms."
+        }
+      ]
+    },
+    "mathematics": {
+      "Algebra": [
+        {
+          "type": "saq",
+          "question": "What is the value of x if 2x + 3 = 7?",
+          "answer": "x = 2",
+          "explanation": "2x + 3 = 7 ⇒ 2x = 7 - 3 ⇒ x = 2."
+        }
+      ]
+    }
+  }
+}

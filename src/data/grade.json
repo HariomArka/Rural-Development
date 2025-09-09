@@ -1,205 +1,205 @@
 {
-    "sixth": {
-        "mathematics": {
-            "expert": "Srinivasa Ramanujan",
-            "quote": "An equation means nothing to me unless it expresses a thought of God.",
-            "designation": "Mathematical Genius & Fellow of the Royal Society",
-            "image": "/experts/ramanujan.jpg",
-            "link": "/sixth/mathematics/"
-        },
-        "basic_science": {
-            "expert": "C.V. Raman",
-            "quote": "Ask the right questions, and nature will open the doors to her secrets.",
-            "designation": "Nobel Laureate in Physics",
-            "image": "/experts/raman.jpg",
-            "link": "/sixth/basic-science/"
-        },
-        "geography": {
-            "expert": "Alexander von Humboldt",
-            "quote": "Nature is a living whole, not a dead aggregate.",
-            "designation": "Father of Modern Geography",
-            "image": "/experts/humboldt.jpg",
-            "link": "/sixth/geography/"
-        }
+  "sixth": {
+    "mathematics": {
+      "expert": "Srinivasa Ramanujan",
+      "quote": "An equation means nothing to me unless it expresses a thought of God.",
+      "designation": "Mathematical Genius & Fellow of the Royal Society",
+      "image": "/experts/ramanujan.jpg",
+      "link": "/sixth/mathematics"
     },
-    "seventh": {
-        "physics": {
-            "expert": "Homi J. Bhabha",
-            "quote": "Science is not a subject apart from daily life.",
-            "designation": "Father of Indian Nuclear Program",
-            "image": "/experts/homi.jpg",
-            "link": "/seventh/physics/"
-        },
-        "chemistry": {
-            "expert": "Prafulla Chandra Ray",
-            "quote": "Science should be a means of national advancement.",
-            "designation": "Father of Indian Chemistry Industry",
-            "image": "/experts/pcray.jpg",
-            "link": "/seventh/chemistry/"
-        },
-        "mathematics": {
-            "expert": "Srinivasa Ramanujan",
-            "quote": "An equation means nothing to me unless it expresses a thought of God.",
-            "designation": "Mathematical Genius & Fellow of the Royal Society",
-            "image": "/experts/ramanujan.jpg",
-            "link": "/seventh/mathematics/"
-        },
-        "biology": {
-            "expert": "Salim Ali",
-            "quote": "Each species has its own story to tell.",
-            "designation": "Father of Indian Ornithology",
-            "image": "/experts/salim.jpg",
-            "link": "/seventh/biology/"
-        }
+    "basic_science": {
+      "expert": "C.V. Raman",
+      "quote": "Ask the right questions, and nature will open the doors to her secrets.",
+      "designation": "Nobel Laureate in Physics",
+      "image": "/experts/raman.jpg",
+      "link": "/sixth/basic-science"
     },
-    "eighth": {
-        "physics": {
-            "expert": "C.V. Raman",
-            "quote": "Ask the right questions, and nature will open the doors to her secrets.",
-            "designation": "Nobel Laureate in Physics",
-            "image": "/experts/raman.jpg",
-            "link": "/eighth/physics/"
-        },
-        "chemistry": {
-            "expert": "Meghnad Saha",
-            "quote": "Science is organized knowledge.",
-            "designation": "Astrophysicist and Inventor of Saha Ionization Equation",
-            "image": "/experts/mnsaha.jpg",
-            "link": "/eighth/chemistry/"
-        },
-        "mathematics": {
-            "expert": "D.R. Kaprekar",
-            "quote": "Curiosity is the wick in the candle of learning.",
-            "designation": "Mathematician known for Kaprekar's Constant",
-            "image": "/experts/kaprekar.jpg",
-            "link": "/eighth/mathematics/"
-        },
-        "biology": {
-            "expert": "Birbal Sahni",
-            "quote": "The past is a key to understanding present life.",
-            "designation": "Paleobotanist & Founder of Indian Botanical Research",
-            "image": "/experts/birbal.jpg",
-            "link": "/eighth/biology/"
-        }
-    },
-    "ninth": {
-        "physics": {
-            "expert": "Homi J. Bhabha",
-            "quote": "Understanding nature leads to progress.",
-            "designation": "Father of Indian Nuclear Program",
-            "image": "/experts/homi.jpg",
-            "link": "/ninth/physics/"
-        },
-        "chemistry": {
-            "expert": "Prafulla Chandra Ray",
-            "quote": "Chemical knowledge is key to national progress.",
-            "designation": "Father of Indian Chemistry Industry",
-            "image": "/experts/pcray.jpg",
-            "link": "/ninth/chemistry/"
-        },
-        "mathematics": {
-            "expert": "Srinivasa Ramanujan",
-            "quote": "An equation means nothing to me unless it expresses a thought of God.",
-            "designation": "Mathematical Genius & Fellow of the Royal Society",
-            "image": "/experts/ramanujan.jpg",
-            "link": "/ninth/mathematics/"
-        },
-        "biology": {
-            "expert": "Salim Ali",
-            "quote": "Conservation of biodiversity is essential for a sustainable future.",
-            "designation": "Father of Indian Ornithology",
-            "image": "/experts/salim.jpg",
-            "link": "/ninth/biology/"
-        }
-    },
-    "tenth": {
-        "physics": {
-            "expert": "C.V. Raman",
-            "quote": "Scientific pursuit reveals the beauty of nature.",
-            "designation": "Nobel Laureate in Physics",
-            "image": "/experts/raman.jpg",
-            "link": "/tenth/physics/"
-        },
-        "chemistry": {
-            "expert": "Meghnad Saha",
-            "quote": "Physical conditions of stars explained by ionization.",
-            "designation": "Astrophysicist",
-            "image": "/experts/meghnad-saha.jpg",
-            "link": "/tenth/chemistry/"
-        },
-        "mathematics": {
-            "expert": "D.R. Kaprekar",
-            "quote": "Numbers are like stars—endless and full of surprises.",
-            "designation": "Renowned Mathematician",
-            "image": "/experts/kaprekar.jpg",
-            "link": "/tenth/mathematics/"
-        },
-        "biology": {
-            "expert": "Birbal Sahni",
-            "quote": "Plant fossils connect us to Earth's history.",
-            "designation": "Paleobotanist",
-            "image": "/experts/birbal-sahni.jpg",
-            "link": "/tenth/biology/"
-        }
-    },
-    "eleventh": {
-        "physics": {
-            "expert": "Homi J. Bhabha",
-            "quote": "Physics opens doors to the universe.",
-            "designation": "Father of Indian Nuclear Program",
-            "image": "/experts/homi-bhabha.jpg",
-            "link": "/eleventh/physics/"
-        },
-        "chemistry": {
-            "expert": "Prafulla Chandra Ray",
-            "quote": "Chemistry is the central science connecting others.",
-            "designation": "Founder of Indian Chemical Industry",
-            "image": "/experts/prafulla-ray.jpg",
-            "link": "/eleventh/chemistry/"
-        },
-        "mathematics": {
-            "expert": "Srinivasa Ramanujan",
-            "quote": "Pure mathematics is the poetry of logical ideas.",
-            "designation": "Mathematical Genius",
-            "image": "/experts/ramanujan.jpg",
-            "link": "/eleventh/mathematics/"
-        },
-        "biology": {
-            "expert": "Salim Ali",
-            "quote": "Preserving bird species preserves ecological balance.",
-            "designation": "Ornithologist",
-            "image": "/experts/salim-ali.jpg",
-            "link": "/eleventh/biology/"
-        }
-    },
-    "twelfth": {
-        "physics": {
-            "expert": "C.V. Raman",
-            "quote": "Scientific research is the gateway to progress.",
-            "designation": "Nobel Laureate in Physics",
-            "image": "/experts/cv-raman.jpg",
-            "link": "/twelfth/physics/"
-        },
-        "chemistry": {
-            "expert": "Meghnad Saha",
-            "quote": "Saha's equation explains stellar atmospheres.",
-            "designation": "Astrophysicist",
-            "image": "/experts/meghnad-saha.jpg",
-            "link": "/twelfth/chemistry/"
-        },
-        "mathematics": {
-            "expert": "D.R. Kaprekar",
-            "quote": "Mathematics is the key to solving life's puzzles.",
-            "designation": "Mathematical Pioneer",
-            "image": "/experts/kaprekar.jpg",
-            "link": "/twelfth/mathematics/"
-        },
-        "biology": {
-            "expert": "Birbal Sahni",
-            "quote": "Fossil study bridges past and present life forms.",
-            "designation": "Paleobotanist",
-            "image": "/experts/birbal-sahni.jpg",
-            "link": "/twelfth/biology/"
-        }
+    "geography": {
+      "expert": "Alexander von Humboldt",
+      "quote": "Nature is a living whole, not a dead aggregate.",
+      "designation": "Father of Modern Geography",
+      "image": "/experts/humboldt.jpg",
+      "link": "/sixth/geography"
     }
+  },
+  "seventh": {
+    "physics": {
+      "expert": "Homi J. Bhabha",
+      "quote": "Science is not a subject apart from daily life.",
+      "designation": "Father of Indian Nuclear Program",
+      "image": "/experts/homi.jpg",
+      "link": "/seventh/physics"
+    },
+    "chemistry": {
+      "expert": "Prafulla Chandra Ray",
+      "quote": "Science should be a means of national advancement.",
+      "designation": "Father of Indian Chemistry Industry",
+      "image": "/experts/pcray.jpg",
+      "link": "/seventh/chemistry"
+    },
+    "mathematics": {
+      "expert": "Srinivasa Ramanujan",
+      "quote": "An equation means nothing to me unless it expresses a thought of God.",
+      "designation": "Mathematical Genius & Fellow of the Royal Society",
+      "image": "/experts/ramanujan.jpg",
+      "link": "/seventh/mathematics"
+    },
+    "biology": {
+      "expert": "Salim Ali",
+      "quote": "Each species has its own story to tell.",
+      "designation": "Father of Indian Ornithology",
+      "image": "/experts/salim.jpg",
+      "link": "/seventh/biology"
+    }
+  },
+  "eighth": {
+    "physics": {
+      "expert": "C.V. Raman",
+      "quote": "Ask the right questions, and nature will open the doors to her secrets.",
+      "designation": "Nobel Laureate in Physics",
+      "image": "/experts/raman.jpg",
+      "link": "/eighth/physics"
+    },
+    "chemistry": {
+      "expert": "Meghnad Saha",
+      "quote": "Science is organized knowledge.",
+      "designation": "Astrophysicist and Inventor of Saha Ionization Equation",
+      "image": "/experts/mnsaha.jpg",
+      "link": "/eighth/chemistry"
+    },
+    "mathematics": {
+      "expert": "D.R. Kaprekar",
+      "quote": "Curiosity is the wick in the candle of learning.",
+      "designation": "Mathematician known for Kaprekar's Constant",
+      "image": "/experts/kaprekar.jpeg",
+      "link": "/eighth/mathematics"
+    },
+    "biology": {
+      "expert": "Birbal Sahni",
+      "quote": "The past is a key to understanding present life.",
+      "designation": "Paleobotanist & Founder of Indian Botanical Research",
+      "image": "/experts/birbal.jpg",
+      "link": "/eighth/biology"
+    }
+  },
+  "ninth": {
+    "physics": {
+      "expert": "Homi J. Bhabha",
+      "quote": "Understanding nature leads to progress.",
+      "designation": "Father of Indian Nuclear Program",
+      "image": "/experts/homi.jpg",
+      "link": "/ninth/physics"
+    },
+    "chemistry": {
+      "expert": "Prafulla Chandra Ray",
+      "quote": "Chemical knowledge is key to national progress.",
+      "designation": "Father of Indian Chemistry Industry",
+      "image": "/experts/pcray.jpg",
+      "link": "/ninth/chemistry"
+    },
+    "mathematics": {
+      "expert": "Srinivasa Ramanujan",
+      "quote": "An equation means nothing to me unless it expresses a thought of God.",
+      "designation": "Mathematical Genius & Fellow of the Royal Society",
+      "image": "/experts/ramanujan.jpg",
+      "link": "/ninth/mathematics"
+    },
+    "biology": {
+      "expert": "Salim Ali",
+      "quote": "Conservation of biodiversity is essential for a sustainable future.",
+      "designation": "Father of Indian Ornithology",
+      "image": "/experts/salim.jpg",
+      "link": "/ninth/biology"
+    }
+  },
+  "tenth": {
+    "physics": {
+      "expert": "C.V. Raman",
+      "quote": "Scientific pursuit reveals the beauty of nature.",
+      "designation": "Nobel Laureate in Physics",
+      "image": "/experts/raman.jpg",
+      "link": "/tenth/physics"
+    },
+    "chemistry": {
+      "expert": "Meghnad Saha",
+      "quote": "Physical conditions of stars explained by ionization.",
+      "designation": "Astrophysicist",
+      "image": "/experts/mnsaha.jpg",
+      "link": "/tenth/chemistry"
+    },
+    "mathematics": {
+      "expert": "D.R. Kaprekar",
+      "quote": "Numbers are like stars—endless and full of surprises.",
+      "designation": "Renowned Mathematician",
+      "image": "/experts/kaprekar.jpeg",
+      "link": "/tenth/mathematics"
+    },
+    "biology": {
+      "expert": "Birbal Sahni",
+      "quote": "Plant fossils connect us to Earth's history.",
+      "designation": "Paleobotanist",
+      "image": "/experts/birbal.jpg",
+      "link": "/tenth/biology"
+    }
+  },
+  "eleventh": {
+    "physics": {
+      "expert": "Homi J. Bhabha",
+      "quote": "Physics opens doors to the universe.",
+      "designation": "Father of Indian Nuclear Program",
+      "image": "/experts/homi.jpg",
+      "link": "/eleventh/physics"
+    },
+    "chemistry": {
+      "expert": "Prafulla Chandra Ray",
+      "quote": "Chemistry is the central science connecting others.",
+      "designation": "Founder of Indian Chemical Industry",
+      "image": "/experts/pcray.jpg",
+      "link": "/eleventh/chemistry"
+    },
+    "mathematics": {
+      "expert": "Srinivasa Ramanujan",
+      "quote": "Pure mathematics is the poetry of logical ideas.",
+      "designation": "Mathematical Genius",
+      "image": "/experts/ramanujan.jpg",
+      "link": "/eleventh/mathematics"
+    },
+    "biology": {
+      "expert": "Salim Ali",
+      "quote": "Preserving bird species preserves ecological balance.",
+      "designation": "Ornithologist",
+      "image": "/experts/salim.jpg",
+      "link": "/eleventh/biology"
+    }
+  },
+  "twelfth": {
+    "physics": {
+      "expert": "C.V. Raman",
+      "quote": "Scientific research is the gateway to progress.",
+      "designation": "Nobel Laureate in Physics",
+      "image": "/experts/raman.jpg",
+      "link": "/twelfth/physics"
+    },
+    "chemistry": {
+      "expert": "Meghnad Saha",
+      "quote": "Saha's equation explains stellar atmospheres.",
+      "designation": "Astrophysicist",
+      "image": "/experts/mnsaha.jpg",
+      "link": "/twelfth/chemistry"
+    },
+    "mathematics": {
+      "expert": "D.R. Kaprekar",
+      "quote": "Mathematics is the key to solving life's puzzles.",
+      "designation": "Mathematical Pioneer",
+      "image": "/experts/kaprekar.jpeg",
+      "link": "/twelfth/mathematics"
+    },
+    "biology": {
+      "expert": "Birbal Sahni",
+      "quote": "Fossil study bridges past and present life forms.",
+      "designation": "Paleobotanist",
+      "image": "/experts/birbal.jpg",
+      "link": "/twelfth/biology"
+    }
+  }
 }

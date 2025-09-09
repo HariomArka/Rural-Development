@@ -4,11 +4,14 @@ import Navbar from "./components/Navbar";
 // import useScrollToTop from "./hooks/scrollToTop"
 import Home from "./pages/Home";
 import Team from "./pages/Team";
-import QuizPage from './components/QuizPage'; 
+import QuizPage from './components/QuizPage';
 import VideoLessonsPage from './components/VideoLessonsPage';
 
 import ProjectileMotionGame from "./games/eleventh/Projectile";
 import QuadraticSolverGame from "./games/tenth/Quadratic";
+
+import Quizzes from "./components/Quizzes";
+import QuizInterface from './components/QuizInterface';
 
 // New dynamic pages
 import SubjectPage from "./components/SubjectPage";
@@ -38,7 +41,10 @@ function App() {
 
         <Route path="/:grade/:subject/quiz/:level" element={<QuizPage />} />
 
-        <Route path="/:grade/:subject//video-lessons" element={<VideoLessonsPage />} />
+        <Route path="/:grade/:subject/practice-quizzes" element={<Quizzes />} />
+        <Route path="/:grade/:subject/practice-quizzes/:subtopic" element={<QuizInterface />} />
+
+        <Route path="/:grade/:subject/video-lessons" element={<VideoLessonsPage />} />
       </Routes>
     </Router>
   );
