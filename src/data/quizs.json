@@ -64,64 +64,426 @@
       "Arithmetic": [
         {
           "type": "mcq",
-          "question": "What is 7 + 5?",
-          "options": ["11", "12", "13", "10"],
-          "answer": "12",
-          "explanation": "Adding 7 and 5 gives 12."
+          "question": "What is 15 - 7?",
+          "options": ["7", "8", "9", "10"],
+          "answer": "8",
+          "explanation": "Subtracting 7 from 15 gives 8."
+        },
+        {
+          "type": "saq",
+          "question": "What is the greatest 2-digit number?",
+          "answer": "99",
+          "explanation": "The largest 2-digit number is 99."
+        },
+        {
+          "type": "mcq",
+          "question": "Which number is a multiple of 5?",
+          "options": ["12", "37", "45", "62"],
+          "answer": "45",
+          "explanation": "Multiples of 5 end with 0 or 5."
+        },
+        {
+          "type": "saq",
+          "question": "Write the place value of 7 in 4721.",
+          "answer": "700",
+          "explanation": "The digit 7 is in the hundreds place."
+        },
+        {
+          "type": "mcq",
+          "question": "What is 3/4 of 20?",
+          "options": ["10", "12", "14", "15"],
+          "answer": "15",
+          "explanation": "3/4 × 20 = 15."
         }
       ],
       "Geometry": [
         {
           "type": "saq",
-          "question": "What is the sum of interior angles of a triangle?",
-          "answer": "180 degrees.",
-          "explanation": "The sum of interior angles of any triangle is always 180 degrees."
+          "question": "How many sides does a pentagon have?",
+          "answer": "5",
+          "explanation": "By definition, a pentagon has 5 sides."
+        },
+        {
+          "type": "mcq",
+          "question": "Shape of the Earth is?",
+          "options": ["Sphere", "Circle", "Rectangle", "Cube"],
+          "answer": "Sphere",
+          "explanation": "Earth’s shape is nearly spherical."
+        },
+        {
+          "type": "saq",
+          "question": "What is the smallest angle in geometry?",
+          "answer": "Zero degree angle.",
+          "explanation": "The smallest possible angle is 0°."
+        },
+        {
+          "type": "mcq",
+          "question": "Which polygon has 8 sides?",
+          "options": ["Hexagon", "Octagon", "Pentagon", "Nonagon"],
+          "answer": "Octagon",
+          "explanation": "Octa means 8."
+        },
+        {
+          "type": "saq",
+          "question": "What is the name of a triangle with all three sides equal?",
+          "answer": "Equilateral triangle",
+          "explanation": "Equilateral triangle has all equal sides and angles."
+        }
+      ]
+    },
+    "geography": {
+      "Earth": [
+        {
+          "type": "mcq",
+          "question": "What is the shape of the Earth?",
+          "options": ["Flat", "Spherical", "Rectangular", "Oval"],
+          "answer": "Spherical",
+          "explanation": "The Earth is spherical (almost an oblate sphere)."
+        },
+        {
+          "type": "saq",
+          "question": "What are parallels of latitude?",
+          "answer": "Imaginary horizontal lines drawn parallel to the Equator.",
+          "explanation": "They measure the distance north or south of the Equator."
+        },
+        {
+          "type": "mcq",
+          "question": "Which latitude divides the Earth into Northern and Southern Hemispheres?",
+          "options": ["Equator", "Tropic of Cancer", "Tropic of Capricorn", "Prime Meridian"],
+          "answer": "Equator",
+          "explanation": "The Equator is the zero-degree latitude."
+        },
+        {
+          "type": "saq",
+          "question": "What is the Prime Meridian?",
+          "answer": "The longitude marked as 0°, passing through Greenwich.",
+          "explanation": "It divides the Earth into Eastern and Western Hemispheres."
+        },
+        {
+          "type": "mcq",
+          "question": "Which is the largest continent?",
+          "options": ["Africa", "Asia", "Europe", "North America"],
+          "answer": "Asia",
+          "explanation": "Asia is the largest continent in area and population."
+        },
+        {
+          "type": "saq",
+          "question": "Name the four cardinal directions.",
+          "answer": "North, South, East, and West.",
+          "explanation": "They are the basic directions used in maps and navigation."
+        },
+        {
+          "type": "mcq",
+          "question": "Which ocean is the largest?",
+          "options": ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
+          "answer": "Pacific Ocean",
+          "explanation": "The Pacific is the largest ocean covering about one-third of Earth’s surface."
         }
       ]
     }
   },
-
   "seventh": {
+    "mathematics": {
+      "Algebra": [
+        {"type":"saq","question":"Solve 2x+3=7.","answer":"x=2","explanation":"Subtract 3 and divide by 2."},
+        {"type":"mcq","question":"Simplify (a+b)².","options":["a²+b²","a²+2ab+b²","2a+2b","ab"],"answer":"a²+2ab+b²","explanation":"(a+b)² expands to a²+2ab+b²."},
+        {"type":"saq","question":"Define coefficient.","answer":"A number multiplied with a variable in an expression.","explanation":"In 5x, 5 is the coefficient."},
+        {"type":"mcq","question":"Which is a linear equation?","options":["x²=4","2x+3=7","y²+3y=0","xy=10"],"answer":"2x+3=7","explanation":"Linear has degree 1."},
+        {"type":"saq","question":"If x=3, value of 2x²?","answer":"18","explanation":"2×(9)=18."},
+        {"type":"mcq","question":"What is variable in 4y+7?","options":["4","y","7","11"],"answer":"y","explanation":"y takes different values."},
+        {"type":"saq","question":"Expand (x-2)(x+2).","answer":"x²-4","explanation":"By difference of squares."},
+        {"type":"mcq","question":"Solution of 3x=12?","options":["2","3","4","5"],"answer":"4","explanation":"Divide both sides by 3."}
+      ]
+    },
     "physics": {
       "Light": [
-        {
-          "type": "mcq",
-          "question": "What is the speed of light in vacuum?",
-          "options": ["3 × 10^8 m/s", "1.5 × 10^8 m/s", "3 × 10^6 m/s", "1 × 10^8 m/s"],
-          "answer": "3 × 10^8 m/s",
-          "explanation": "The speed of light in vacuum is approximately 3 × 10^8 meters per second."
-        }
+        {"type":"mcq","question":"Speed of light in vacuum?","options":["3×10^8 m/s","1.5×10^8 m/s","3×10^6 m/s","1×10^8 m/s"],"answer":"3×10^8 m/s","explanation":"Correct SI value."},
+        {"type":"saq","question":"Define reflection.","answer":"The bouncing back of light from a surface.","explanation":"Mirror reflects light."},
+        {"type":"mcq","question":"Laws of reflection state?","options":["i=r","Angle incident=Angle reflected","Normal perpendicular","All"],"answer":"All","explanation":"All are true."},
+        {"type":"saq","question":"Define refraction.","answer":"Bending of light as it passes from one medium to another.","explanation":"Caused by change in speed."},
+        {"type":"mcq","question":"Lens focusing to point?","options":["Concave lens","Convex lens","Plane mirror","Concave mirror"],"answer":"Convex lens","explanation":"Convex converges rays."},
+        {"type":"saq","question":"Define focal length.","answer":"Distance between lens/mirror and focus point.","explanation":"Important property of lens/mirror."},
+        {"type":"mcq","question":"Image in plane mirror is?","options":["Real","Inverted","Virtual","Shrunk"],"answer":"Virtual","explanation":"Plane mirror makes upright virtual images."},
+        {"type":"saq","question":"What is dispersion of light?","answer":"Splitting of white light into colors.","explanation":"Forms rainbow spectrum."}
       ]
     },
     "chemistry": {
       "Atoms": [
-        {
-          "type": "saq",
-          "question": "What is an atom?",
-          "answer": "The atom is the smallest unit of matter that retains the properties of an element.",
-          "explanation": "An atom consists of a nucleus with protons and neutrons, surrounded by electrons."
-        }
+        {"type":"saq","question":"Define atom.","answer":"Smallest unit of element.","explanation":"Maintains properties."},
+        {"type":"mcq","question":"Who discovered electron?","options":["Thomson","Bohr","Rutherford","Dalton"],"answer":"Thomson","explanation":"CRT experiment."},
+        {"type":"saq","question":"What particle has no charge?","answer":"Neutron","explanation":"Neutral particle."},
+        {"type":"mcq","question":"Mass of atom concentrated in?","options":["Electrons","Protons","Nucleus","Neutrons"],"answer":"Nucleus","explanation":"Protons+neutrons give mass."},
+        {"type":"saq","question":"Define element.","answer":"Substance made of only one type of atom.","explanation":"Cannot be broken chemically."},
+        {"type":"mcq","question":"Electron charge?","options":["+1","-1","0","+2"],"answer":"-1","explanation":"Electrons are negatively charged."},
+        {"type":"saq","question":"Define molecule.","answer":"Two or more atoms bonded.","explanation":"Group of atoms held together."},
+        {"type":"mcq","question":"Which is compound?","options":["O₂","H₂","H₂O","N₂"],"answer":"H₂O","explanation":"Combination of different atoms."}
       ]
     },
     "biology": {
       "Cells": [
-        {
-          "type": "mcq",
-          "question": "What is the basic unit of life?",
-          "options": ["Organ", "Tissue", "Cell", "Organ system"],
-          "answer": "Cell",
-          "explanation": "The cell is the basic structural and functional unit of all living organisms."
-        }
+        {"type":"mcq","question":"Basic unit of life?","options":["Organ","Tissue","Cell","System"],"answer":"Cell","explanation":"Cell is fundamental."},
+        {"type":"saq","question":"Who discovered cell?","answer":"Robert Hooke","explanation":"Looked at cork cells."},
+        {"type":"mcq","question":"Control center of cell?","options":["Nucleus","Mitochondria","Ribosome","Chloroplast"],"answer":"Nucleus","explanation":"Contains DNA."},
+        {"type":"saq","question":"What is cytoplasm?","answer":"Jelly-like substance inside cell.","explanation":"Holds organelles."},
+        {"type":"mcq","question":"Which organelle does photosynthesis?","options":["Nucleus","Chloroplast","Mitochondria","ER"],"answer":"Chloroplast","explanation":"Contains chlorophyll."},
+        {"type":"saq","question":"Name two differences between plant & animal cells.","answer":"Plant cells have cell wall and chloroplasts; animal cells do not.","explanation":"Key distinctions in structure."},
+        {"type":"mcq","question":"Mitochondria are called?","options":["Control center","Kitchen","Powerhouse","Waste bin"],"answer":"Powerhouse","explanation":"Generate ATP."},
+        {"type":"saq","question":"Define tissue.","answer":"Group of cells with similar structure and function.","explanation":"Basic level of organization."}
+      ]
+    }
+  },
+
+  "eighth": {
+    "physics": {
+      "Sound": [
+        {"type":"mcq","question":"SI unit of frequency?","options":["Hertz","Decibel","Newton","Pascal"],"answer":"Hertz","explanation":"Frequency measured in Hz."},
+        {"type":"saq","question":"Define pitch.","answer":"Sensation produced due to frequency of sound wave.","explanation":"High frequency → high pitch."},
+        {"type":"mcq","question":"Speed of sound in air at room temp?","options":["343 m/s","1500 m/s","300 m/s","30 m/s"],"answer":"343 m/s","explanation":"Speed in air is 343 m/s."},
+        {"type":"saq","question":"Through which medium does sound travel fastest?","answer":"Solid","explanation":"Particles closer, transfer faster."},
+        {"type":"mcq","question":"Unit of loudness?","options":["Decibel","Watt","Hertz","Newton"],"answer":"Decibel","explanation":"Measured in dB."},
+        {"type":"saq","question":"What is echo?","answer":"Reflection of sound wave from a surface back to the listener.","explanation":"Time gap more than 0.1s."},
+        {"type":"mcq","question":"Human ear audible range?","options":["20–20000 Hz","10–5000 Hz","200–2000 Hz","1–100 Hz"],"answer":"20–20000 Hz","explanation":"Normal hearing range."},
+        {"type":"saq","question":"Define vibration.","answer":"To and fro motion of particles producing sound.","explanation":"Cause of sound generation."}
+      ]
+    },
+    "chemistry": {
+      "Compounds": [
+        {"type":"saq","question":"What is chemical formula of water?","answer":"H₂O","explanation":"Two atoms H and one O."},
+        {"type":"mcq","question":"What type of mixture is salt water?","options":["Homo","Hetero","Element","Compound"],"answer":"Homogeneous mixture","explanation":"Uniform composition."},
+        {"type":"saq","question":"Define compound.","answer":"Substance made from 2+ elements chemically combined.","explanation":"Definite proportion."},
+        {"type":"mcq","question":"Which is an element?","options":["Gold","Salt","Water","Sugar"],"answer":"Gold","explanation":"Only 1 type of atom."},
+        {"type":"saq","question":"What is chemical symbol for Carbon?","answer":"C","explanation":"Element symbol."},
+        {"type":"mcq","question":"Which is organic compound?","options":["NaCl","C₆H₁₂O₆","H₂O","Fe"],"answer":"C₆H₁₂O₆","explanation":"Glucose is organic compound."},
+        {"type":"saq","question":"Define molecule of element.","answer":"Two/more atoms of same element bonded.","explanation":"Example: O₂."},
+        {"type":"mcq","question":"What is CO₂ made of?","options":["C+O₂","C+O","C+2O","CO+O"],"answer":"C+O₂","explanation":"1 carbon +2 oxygen atoms."}
+      ]
+    },
+    "biology": {
+      "Reproduction": [
+        {"type":"mcq","question":"Organ producing female gametes?","options":["Ovary","Uterus","Stomach","Kidney"],"answer":"Ovary","explanation":"Eggs produced in ovaries."},
+        {"type":"saq","question":"Male gamete called?","answer":"Sperm","explanation":"Produced by testes."},
+        {"type":"mcq","question":"Which is asexual reproduction method?","options":["Binary fission","Pollination","Fertilization","Conjugation"],"answer":"Binary fission","explanation":"One parent reproduces."},
+        {"type":"saq","question":"What is fertilization?","answer":"Fusion of male and female gametes.","explanation":"Forms zygote."},
+        {"type":"mcq","question":"Which part in flower produces pollen?","options":["Anther","Ovary","Sepal","Petal"],"answer":"Anther","explanation":"Male part of stamen."},
+        {"type":"saq","question":"State difference between vegetative and sexual reproduction.","answer":"Vegetative uses plant parts, sexual uses gametes.","explanation":"Different reproduction types."},
+        {"type":"mcq","question":"Offspring of asexual reproduction are?","options":["Identical","Different","Hybrid","Sterile"],"answer":"Identical","explanation":"Clones of parent."},
+        {"type":"saq","question":"Define pollination.","answer":"Transfer of pollen from anther to stigma.","explanation":"Leads to fertilization."}
       ]
     },
     "mathematics": {
-      "Algebra": [
-        {
-          "type": "saq",
-          "question": "What is the value of x if 2x + 3 = 7?",
-          "answer": "x = 2",
-          "explanation": "2x + 3 = 7 ⇒ 2x = 7 - 3 ⇒ x = 2."
-        }
+      "Mensuration": [
+        {"type":"saq","question":"Formula area of circle?","answer":"πr²","explanation":"Basic formula."},
+        {"type":"mcq","question":"Volume of sphere radius r?","options":["4/3 πr³","2πr","πr²","r³"],"answer":"4/3 πr³","explanation":"Sphere volume formula."},
+        {"type":"saq","question":"Surface area of cube side a?","answer":"6a²","explanation":"Formula =6×side²."},
+        {"type":"mcq","question":"Perimeter of rectangle l×b?","options":["l+b","2(l+b)","lb","l²+b²"],"answer":"2(l+b)","explanation":"Add all sides."},
+        {"type":"saq","question":"What is diagonal of square side a?","answer":"a√2","explanation":"From Pythagoras theorem."},
+        {"type":"mcq","question":"Total surface area of cylinder radius r, height h?","options":["2πrh","πr²h","2πr(h+r)","πr³"],"answer":"2πr(h+r)","explanation":"Curved+2 base areas."},
+        {"type":"saq","question":"Formula of perimeter of circle?","answer":"2πr","explanation":"Circumference formula."},
+        {"type":"mcq","question":"If radius=7 cm, area circle?","options":["154 cm²","44 cm²","77 cm²","132 cm²"],"answer":"154 cm²","explanation":"πr²=22/7×49=154."}
+      ]
+    }
+  },
+
+  "ninth": {
+    "physics": {
+      "Motion": [
+        {"type":"mcq","question":"Newton’s 2nd law formula?","options":["F=ma","E=mc²","V=IR","s=ut+½at²"],"answer":"F=ma","explanation":"Force=mass×acceleration."},
+        {"type":"saq","question":"Define acceleration.","answer":"Rate of change of velocity per unit time.","explanation":"a=(v-u)/t."},
+        {"type":"mcq","question":"SI unit of velocity?","options":["m","m/s","m/s²","N"],"answer":"m/s","explanation":"Velocity=displacement/time."},
+        {"type":"saq","question":"Uniform motion?","answer":"Object covers equal distances in equal intervals of time.","explanation":"Constant velocity."},
+        {"type":"mcq","question":"Equation of motion for displacement?","options":["v=u+at","s=ut+½at²","v²=u²+2as","F=ma"],"answer":"s=ut+½at²","explanation":"Second equation of motion."},
+        {"type":"saq","question":"What is inertia?","answer":"Tendency of body to resist change in state.","explanation":"Property of mass."},
+        {"type":"mcq","question":"Graph of speed vs time slope gives?","options":["Displacement","Distance","Acceleration","Force"],"answer":"Acceleration","explanation":"Slope of v-t is acceleration."},
+        {"type":"saq","question":"Define momentum.","answer":"Product of mass and velocity of object.","explanation":"p=mv."}
+      ]
+    },
+    "chemistry": {
+      "Periodic Table": [
+        {"type":"saq","question":"Who arranged elements by atomic mass?","answer":"Dmitri Mendeleev","explanation":"Father of table."},
+        {"type":"mcq","question":"Atomic number of Oxygen?","options":["6","7","8","9"],"answer":"8","explanation":"Oxygen has 8 protons."},
+        {"type":"saq","question":"Define isotope.","answer":"Atoms of same element with different neutrons.","explanation":"Mass varies."},
+        {"type":"mcq","question":"Halogens group number?","options":["1","2","17","18"],"answer":"17","explanation":"Fluorine, chlorine etc."},
+        {"type":"saq","question":"Metals are placed where in periodic table?","answer":"On the left-hand side.","explanation":"Non-metals on right."},
+        {"type":"mcq","question":"Noble gases group?","options":["14","15","16","18"],"answer":"18","explanation":"Inert gases."},
+        {"type":"saq","question":"Define atomic number.","answer":"Number of protons in atom nucleus.","explanation":"Unique to element."},
+        {"type":"mcq","question":"Who discovered neutron?","options":["Thomson","Rutherford","Chadwick","Bohr"],"answer":"Chadwick","explanation":"Discovered neutron in 1932."}
+      ]
+    },
+    "biology": {
+      "Genetics": [
+        {"type":"mcq","question":"Father of genetics?","options":["Darwin","Mendel","Lamarck","Pasteur"],"answer":"Mendel","explanation":"Experiments on pea plants."},
+        {"type":"saq","question":"What is gene?","answer":"Unit of heredity.","explanation":"Controls traits."},
+        {"type":"mcq","question":"Human chromosome number?","options":["22","23","44","46"],"answer":"46","explanation":"23 pairs."},
+        {"type":"saq","question":"Define dominant trait.","answer":"Trait expressed when at least one allele present.","explanation":"Masks recessive."},
+        {"type":"mcq","question":"Phenotype refers to?","options":["Genetic makeup","Visible traits","DNA sequence","Protein only"],"answer":"Visible traits","explanation":"Observed features."},
+        {"type":"saq","question":"DNA full form?","answer":"Deoxyribonucleic Acid","explanation":"Carrier of genetic information."},
+        {"type":"mcq","question":"Mendel worked with which plant?","options":["Maize","Tomato","Pea","Wheat"],"answer":"Pea","explanation":"Pisum sativum."},
+        {"type":"saq","question":"Define recessive trait.","answer":"Expressed only when both alleles are recessive.","explanation":"Masked by dominant one."}
+      ]
+    },
+    "mathematics": {
+      "Trigonometry": [
+        {"type":"saq","question":"Value of sin90°?","answer":"1","explanation":"Trigonometric value."},
+        {"type":"mcq","question":"cos0°?","options":["0","1","-1","√2"],"answer":"1","explanation":"cos of 0=1."},
+        {"type":"saq","question":"tan45°?","answer":"1","explanation":"=1."},
+        {"type":"mcq","question":"sin²θ+cos²θ=?","options":["1","2","0","∞"],"answer":"1","explanation":"Identity."},
+        {"type":"saq","question":"cotθ=?","answer":"1/tanθ","explanation":"Reciprocal of tan."},
+        {"type":"mcq","question":"secθ=?","options":["1/sinθ","1/cosθ","1/tanθ","tanθ"],"answer":"1/cosθ","explanation":"Reciprocal of cos."},
+        {"type":"saq","question":"Define hypotenuse.","answer":"Longest side opposite right angle.","explanation":"In right triangle."},
+        {"type":"mcq","question":"tanθ=sinθ/cosθ? True/False","options":["True","False"],"answer":"True","explanation":"By definition tanθ=sinθ/cosθ."}
+      ]
+    }
+  },
+
+  "tenth": {
+    "physics": {
+      "Electricity": [
+        {"type":"mcq","question":"SI unit of current?","options":["Volt","Ampere","Ohm","Watt"],"answer":"Ampere","explanation":"Current unit."},
+        {"type":"saq","question":"Define resistance.","answer":"Opposition to flow of current.","explanation":"Measured in ohm."},
+        {"type":"mcq","question":"Unit of potential difference?","options":["Ampere","Volt","Coulomb","Watt"],"answer":"Volt","explanation":"SI unit V."},
+        {"type":"saq","question":"Ohm's law?","answer":"V=IR","explanation":"Relationship of V,I,R."},
+        {"type":"mcq","question":"Which particle flows in wires?","options":["Electrons","Protons","Neutrons","Ions"],"answer":"Electrons","explanation":"Current carried by electrons."},
+        {"type":"saq","question":"Define power in electricity.","answer":"Rate of doing electrical work OR P=VI.","explanation":"Measured in watts."},
+        {"type":"mcq","question":"Fuse is used for?","options":["Decoration","Overload protection","Source","None"],"answer":"Overload protection","explanation":"Prevents damage."},
+        {"type":"saq","question":"Define electric circuit.","answer":"Closed path through which current flows.","explanation":"Requires continuous path."}
+      ]
+    },
+    "chemistry": {
+      "Chemical Reactions": [
+        {"type":"saq","question":"What is oxidation?","answer":"Loss of electrons or gain of O₂.","explanation":"Part of Redox reaction."},
+        {"type":"mcq","question":"Example of neutralization reaction?","options":["HCl+NaOH→NaCl+H₂O","CuO+H₂→Cu+H₂O","Fe+S→FeS","2KClO₃→2KCl+3O₂"],"answer":"HCl+NaOH→NaCl+H₂O","explanation":"Acid+base gives salt+water."},
+        {"type":"saq","question":"Define reduction.","answer":"Gain of electrons or removal of O₂.","explanation":"Opposite of oxidation."},
+        {"type":"mcq","question":"Rusting is?","options":["Oxidation","Reduction","Both","Neutralization"],"answer":"Oxidation","explanation":"Iron reacts with O₂ and H₂O."},
+        {"type":"saq","question":"Exothermic reaction?","answer":"Reaction releasing heat energy.","explanation":"Temperature rises."},
+        {"type":"mcq","question":"Catalyst?","options":["Speeds reaction, unchanged","Slows reaction","Consumed","Stops reaction"],"answer":"Speeds reaction, unchanged","explanation":"Provides alternate pathway."},
+        {"type":"saq","question":"Chemical decomposition by electricity called?","answer":"Electrolysis.","explanation":"Compounds broken by current."},
+        {"type":"mcq","question":"Which is endothermic?","options":["Photosynthesis","Rusting","Neutralization","Combustion"],"answer":"Photosynthesis","explanation":"Takes energy from sunlight."}
+      ]
+    },
+    "biology": {
+      "Respiration": [
+        {"type":"mcq","question":"Gas released in respiration?","options":["CO₂","O₂","N₂","H₂"],"answer":"CO₂","explanation":"By-products of respiration."},
+        {"type":"saq","question":"Organelle where respiration occurs?","answer":"Mitochondria","explanation":"Powerhouse."},
+        {"type":"mcq","question":"Which respiration without oxygen?","options":["Aerobic","Anaerobic"],"answer":"Anaerobic","explanation":"No oxygen needed."},
+        {"type":"saq","question":"ATP full form?","answer":"Adenosine Triphosphate","explanation":"Energy currency."},
+        {"type":"mcq","question":"Breathing is which process?","options":["Physical","Chemical","Both","None"],"answer":"Physical","explanation":"Respiration is chemical, breathing is physical."},
+        {"type":"saq","question":"Define aerobic respiration.","answer":"Breakdown of glucose using oxygen for energy.","explanation":"Releases ATP+CO₂+H₂O."},
+        {"type":"mcq","question":"End product of anaerobic in muscles?","options":["Ethanol","Lactic acid","Glucose","O₂"],"answer":"Lactic acid","explanation":"Causes fatigue."},
+        {"type":"saq","question":"Equation of aerobic respiration?","answer":"Glucose+O₂→CO₂+H₂O+Energy","explanation":"Cellular respiration formula."}
+      ]
+    },
+    "mathematics": {
+      "Geometry": [
+        {"type":"saq","question":"State Pythagoras theorem.","answer":"(Hypotenuse)²=(Base)²+(Height)².","explanation":"Valid in right triangle."},
+        {"type":"mcq","question":"Sum of angles in quadrilateral?","options":["90°","180°","270°","360°"],"answer":"360°","explanation":"Quadrilateral property."},
+        {"type":"saq","question":"Area of triangle base b height h?","answer":"½×b×h","explanation":"Formula used."},
+        {"type":"mcq","question":"Diagonals of rectangle are?","options":["Equal","Unequal","Perpendicular always","None"],"answer":"Equal","explanation":"Equal length diagonals."},
+        {"type":"saq","question":"Surface area of sphere radius r?","answer":"4πr²","explanation":"Formula of sphere."},
+        {"type":"mcq","question":"Number of diagonals in pentagon?","options":["5","10","7","2"],"answer":"5","explanation":"n(n-3)/2 diagonals."},
+        {"type":"saq","question":"Circumference of circle radius r?","answer":"2πr","explanation":"Circle perimeter."},
+        {"type":"mcq","question":"Regular hexagon sides equal or not?","options":["Equal","Not equal"],"answer":"Equal","explanation":"Regular polygon has equal sides."}
+      ]
+    }
+  },
+
+  "eleventh": {
+    "physics": {
+      "Kinematics": [
+        {"type":"mcq","question":"A particle moves along x with displacement s=5t²+2t. What is its velocity at t=3s?","options":["32 m/s","20 m/s","14 m/s","10 m/s"],"answer":"32 m/s","explanation":"v=ds/dt=10t+2. At t=3: 32 m/s."},
+        {"type":"saq","question":"Differentiate between scalar and vector quantities with examples.","answer":"Scalars have magnitude only (e.g. mass), vectors have magnitude and direction (e.g. velocity).","explanation":"Direction is the difference."},
+        {"type":"mcq","question":"If a body is dropped freely, which equation gives distance covered in time t?","options":["s=ut+½at²","s=ut","v²=u²+2as","F=ma"],"answer":"s=½gt²","explanation":"Since u=0, s=½at²."},
+        {"type":"saq","question":"Define relative velocity with example.","answer":"Velocity of one body with respect to another. Example: Two cars moving toward each other at 60 km/h and 40 km/h will have relative velocity 100 km/h.","explanation":"Relative velocity is difference or sum depending on direction."},
+        {"type":"mcq","question":"Graph of velocity vs time for uniform acceleration is?","options":["Straight line","Curve","Parabola","Hyperbola"],"answer":"Straight line","explanation":"Rate of change constant hence linear."},
+        {"type":"saq","question":"A car moves with 10 m/s, accelerates at 2 m/s² for 5s. Final velocity?","answer":"20 m/s","explanation":"v=u+at=10+2×5."},
+        {"type":"mcq","question":"Dimensional formula of acceleration?","options":["[M0L1T-2]","[M0L0T-1]","[M1L0T-2]","[M0L1T-1]"],"answer":"[M0L1T-2]","explanation":"L/T²."},
+        {"type":"saq","question":"Difference between distance and displacement.","answer":"Distance is path length, scalar; displacement is shortest straight-line between two points, vector.","explanation":"Example: running around track."}
+      ]
+    },
+    "chemistry": {
+      "Organic": [
+        {"type":"saq","question":"What is structural isomerism? Give example.","answer":"Compounds with same molecular formula but different structures, e.g. C₄H₁₀ as butane and isobutane.","explanation":"Different linkage, same atoms."},
+        {"type":"mcq","question":"Which functional group is present in aldehydes?","options":["–CHO","–OH","–COOH","–NH₂"],"answer":"–CHO","explanation":"Formyl group."},
+        {"type":"saq","question":"Write IUPAC name of CH₃–CH₂–OH.","answer":"Ethanol","explanation":"Two carbons with OH group."},
+        {"type":"mcq","question":"Which reagent is used to test unsaturation?","options":["Br₂ water","NaCl","HCl","H₂O"],"answer":"Br₂ water","explanation":"Decolorizes bromine water."},
+        {"type":"saq","question":"Distinguish between addition and substitution reactions.","answer":"Addition is when atoms add to multiple bonds, substitution when one atom/group replaces another.","explanation":"Key difference in reactivity."},
+        {"type":"mcq","question":"Identify functional group in acetic acid.","options":["Carboxyl","Hydroxyl","Amino","Aldehyde"],"answer":"Carboxyl","explanation":"CH₃COOH contains –COOH."},
+        {"type":"saq","question":"Explain Markovnikov’s rule with example.","answer":"In addition of HX to alkene, H adds to C with more H atoms. Example: Propene + HBr→2-bromopropane.","explanation":"Follows stability of carbocation."},
+        {"type":"mcq","question":"Benzene under nitration gives?","options":["Nitrobenzene","Benzyl alcohol","Phenol","Toluene"],"answer":"Nitrobenzene","explanation":"Substitution with –NO₂."}
+      ]
+    },
+    "biology": {
+      "Cell Biology": [
+        {"type":"mcq","question":"Who proposed cell theory?","options":["Schleiden & Schwann","Hooke","Darwin","Mendel"],"answer":"Schleiden & Schwann","explanation":"Proposed all living beings are made of cells."},
+        {"type":"saq","question":"Difference between prokaryotic and eukaryotic cells.","answer":"Prokaryotes lack membrane-bound organelles, eukaryotes have nucleus and organelles.","explanation":"Bacteria vs humans."},
+        {"type":"mcq","question":"Which organelle is involved in protein packaging?","options":["Golgi apparatus","Mitochondria","Ribosome","Nucleus"],"answer":"Golgi apparatus","explanation":"Golgi modifies and packages proteins."},
+        {"type":"saq","question":"What are lysosomes & their role?","answer":"Organelles containing digestive enzymes, responsible for intracellular digestion.","explanation":"Called suicide bags."},
+        {"type":"mcq","question":"Microtubules are made of?","options":["Actin","Tubulin","Keratin","Collagen"],"answer":"Tubulin","explanation":"Protein of cytoskeleton."},
+        {"type":"saq","question":"Explain fluid mosaic model.","answer":"Cell membrane is flexible lipid bilayer with embedded proteins.","explanation":"Proposed by Singer and Nicolson."},
+        {"type":"mcq","question":"Organelle synthesizing ATP?","options":["Nucleus","Chloroplast","Mitochondria","Golgi"],"answer":"Mitochondria","explanation":"Generate energy via respiration."},
+        {"type":"saq","question":"What is endocytosis?","answer":"Process of engulfing material through cell membrane.","explanation":"Active transport mechanism."}
+      ]
+    },
+    "mathematics": {
+      "Calculus": [
+        {"type":"saq","question":"Differentiate x³.","answer":"3x²","explanation":"Apply power rule."},
+        {"type":"mcq","question":"∫x dx=?","options":["x²/2+C","2x+C","lnx+C","1/x"],"answer":"x²/2+C","explanation":"Basic integration."},
+        {"type":"saq","question":"Derivative of ln(x)?","answer":"1/x","explanation":"Standard derivative."},
+        {"type":"mcq","question":"If f(x)=x², slope at x=2?","options":["2","4","6","8"],"answer":"4","explanation":"Slope=f’(2)=2x=4."},
+        {"type":"saq","question":"∫cosx dx=?","answer":"sinx+C","explanation":"Integral rules."},
+        {"type":"mcq","question":"Limit of (sinx)/x as x→0?","options":["0","1","∞","Does not exist"],"answer":"1","explanation":"Standard limit identity."},
+        {"type":"saq","question":"What is second derivative test?","answer":"A method to determine maxima or minima using sign of f''(x).","explanation":"If f''>0 minima, if <0 maxima."},
+        {"type":"mcq","question":"Derivative of e^x?","options":["e^x","xe^(x-1)","lnx","0"],"answer":"e^x","explanation":"Derivative equals itself."}
+      ]
+    }
+  },
+
+  "twelfth": {
+    "physics": {
+      "Modern Physics": [
+        {"type":"mcq","question":"De-Broglie wavelength λ=h/p applies to?","options":["Only photons","Only electrons","All matter","None"],"answer":"All matter","explanation":"Wave-particle duality of matter."},
+        {"type":"saq","question":"State Heisenberg’s uncertainty principle.","answer":"It is impossible to simultaneously measure position and momentum precisely.","explanation":"ΔxΔp ≥ h/4π."},
+        {"type":"mcq","question":"Work function of metal is 2 eV. Threshold frequency? (h=6.6×10^-34 J·s, 1eV=1.6×10^-19 J)","options":["4.8×10^14 Hz","3×10^14 Hz","1.2×10^14 Hz","6×10^14 Hz"],"answer":"4.8×10^14 Hz","explanation":"f=W/h=3.2×10^-19/6.6×10^-34."},
+        {"type":"saq","question":"Explain difference between nuclear fission and fusion.","answer":"Fission splits heavy nucleus releasing energy (U-235), fusion combines lighter nuclei (H→He).","explanation":"Both produce energy."},
+        {"type":"mcq","question":"Einstein’s equation relates energy to mass as:","options":["E=mc²","E=mv²","E=½mv²","p=mv"],"answer":"E=mc²","explanation":"Famous mass-energy equation."},
+        {"type":"saq","question":"Define half-life of a radioactive isotope.","answer":"Time taken for half the radioactive nuclei to decay.","explanation":"Independent of initial mass."},
+        {"type":"mcq","question":"Bohr model postulates include:","options":["Electrons revolve in fixed paths","Quantized angular momentum","Energy emission on jump between orbits","All"],"answer":"All","explanation":"All are correct postulates."},
+        {"type":"saq","question":"Why can’t free neutrons exist long outside nucleus?","answer":"They decay with mean life of ~15 minutes into proton, electron, antineutrino.","explanation":"Neutron instability."}
+      ]
+    },
+    "chemistry": {
+      "Electrochemistry": [
+        {"type":"saq","question":"Faraday’s second law of electrolysis?","answer":"Mass deposited is proportional to chemical equivalent weight of substance.","explanation":"Extends first law."},
+        {"type":"mcq","question":"Standard electrode potential of H₂ electrode is defined as:","options":["0V","1V","-1V","+0.5V"],"answer":"0V","explanation":"Reference electrode."},
+        {"type":"saq","question":"Define Nernst equation.","answer":"Ecell=E°cell–(RT/nF)lnQ","explanation":"Relates potential to concentration."},
+        {"type":"mcq","question":"During electrolysis of CuSO₄ solution using Cu electrodes:","options":["Cu dissolves at anode, deposits at cathode","Cu dissolves at cathode","H₂ releases at anode","SO₄²⁻ deposits"],"answer":"Cu dissolves at anode, deposits at cathode","explanation":"Cu transfers between electrodes."},
+        {"type":"saq","question":"What is electrochemical cell?","answer":"Device where redox reaction produces/uses electric current.","explanation":"E.g. Daniel cell."},
+        {"type":"mcq","question":"Battery used in mobile phones mostly is:","options":["Li-ion","Lead-acid","Dry cell","Nickel-cadmium"],"answer":"Li-ion","explanation":"Rechargeable lightweight."},
+        {"type":"saq","question":"State Kohlrausch’s law.","answer":"At infinite dilution, molar conductivity of electrolyte is sum of individual ion conductivities.","explanation":"Helps measure weak electrolytes."},
+        {"type":"mcq","question":"Electroplating is useful because:","options":["Improves appearance","Prevents corrosion","Both","None"],"answer":"Both","explanation":"Provides protection and finish."}
+      ]
+    },
+    "biology": {
+      "Evolution": [
+        {"type":"mcq","question":"Who gave theory of natural selection?","options":["Mendel","Darwin","Lamarck","Wallace"],"answer":"Darwin","explanation":"Darwin’s evolution theory."},
+        {"type":"saq","question":"What is adaptive radiation?","answer":"Evolution of different species from a common ancestor in different environments.","explanation":"Darwin’s finches example."},
+        {"type":"mcq","question":"Homologous organs indicate:","options":["Divergent evolution","Convergent","Mutation","Lamarkism"],"answer":"Divergent evolution","explanation":"Different functions same structure."},
+        {"type":"saq","question":"Define genetic drift.","answer":"Random change in allele frequency in small populations.","explanation":"Founders effect, bottleneck."},
+        {"type":"mcq","question":"Industrial melanism in moths is example of:","options":["Natural selection","Artificial selection","Speciation","Mutation only"],"answer":"Natural selection","explanation":"Black moths survived pollution."},
+        {"type":"saq","question":"What is molecular clock hypothesis?","answer":"Rates of molecular change are constant enough to estimate evolutionary time.","explanation":"Used for phylogeny."},
+        {"type":"mcq","question":"Hardy-Weinberg law states:","options":["Allele frequency constant without evolution","Always changing","Depends on mutation only","No relation"],"answer":"Allele frequency constant without evolution","explanation":"Only under ideal conditions."},
+        {"type":"saq","question":"Define speciation.","answer":"Formation of new species from existing population.","explanation":"Through isolation, mutation, selection."}
+      ]
+    },
+    "mathematics": {
+      "Probability": [
+        {"type":"saq","question":"If P(A)=0.6, P(B)=0.5, A and B independent, find P(A∩B).","answer":"0.3","explanation":"P(A∩B)=P(A)×P(B)."},
+        {"type":"mcq","question":"Variance is measure of:","options":["Central tendency","Dispersion","Correlation","Probability"],"answer":"Dispersion","explanation":"Spread of data."},
+        {"type":"saq","question":"Find probability sum=7 when two dice rolled.","answer":"6/36=1/6","explanation":"Six favorable outcomes."},
+        {"type":"mcq","question":"Mean of binomial distribution np, variance=?","options":["np","npq","n²p","pq/n"],"answer":"npq","explanation":"Variance=npq."},
+        {"type":"saq","question":"Define random variable.","answer":"Variable representing outcome of experiment with probabilities.","explanation":"Discrete or continuous."},
+        {"type":"mcq","question":"In normal distribution, mean=median=mode?","options":["Always","Sometimes","Never"],"answer":"Always","explanation":"Symmetric bell curve."},
+        {"type":"saq","question":"A coin tossed 3 times, probability of exactly 2 heads?","answer":"3/8","explanation":"Combinations=3, total outcomes 8."},
+        {"type":"mcq","question":"If events are mutually exclusive, then:","options":["P(A∩B)=0","P(A∪B)=P(A)+P(B)","Both","None"],"answer":"Both","explanation":"Definition of mutually exclusive events."}
       ]
     }
   }
