@@ -30,7 +30,7 @@ export default function Navbar() {
         >
           <img
             src="/logo.png"
-            alt="EduGamify Logo"
+            alt="Gurukul Logo"
             className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-300 rounded-full"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent hover:from-blue-300 hover:via-purple-300 hover:to-indigo-300 transition-all duration-300">
@@ -74,10 +74,25 @@ export default function Navbar() {
       <div className={`md:hidden bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900 border-t border-white/10 transition-all duration-300 ${isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         }`}>
         <div className="px-6 py-4 space-y-2">
-          {navLink("/", "Home", true)}
-          {navLink("/math", "Mathematics", true)}
-          {navLink("/physics", "Physics", true)}
-          {navLink("/team", "Our Team", true)}
+          {navLink("/", "Home")}
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              if (location.pathname !== "/") {
+                navigate("/", { state: { scrollToClasses: true } });
+              } else {
+                document.getElementById('classes-section')?.scrollIntoView({ behavior: 'smooth' });
+              }
+              setIsMenuOpen(false);
+            }}
+            className="px-4 py-2 rounded-lg font-medium text-white/80 hover:text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
+          >
+            All Classes
+          </a>
+
+          {navLink("/contact", "Contact Us")}
+          {navLink("/team", "Our Team")}
         </div>
       </div>
 
