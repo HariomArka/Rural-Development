@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link,useNavigate } from "react-router-dom";
+import { Link,useNavigate,useLocation } from "react-router-dom";
 import { Book, Calculator, Beaker, Atom, ChevronRight } from "lucide-react";
 import expertsData from "../data/grade.json";
 
@@ -9,6 +9,13 @@ export default function Home() {
   const fullText = "Welcome to Gurukul";
 
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollToClasses) {
+      document.getElementById('classes-section')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location.state]);
 
   const handleSubjectClick = (gradeLink, subjectKey) => {
     const data = expertsData[gradeLink][subjectKey];
@@ -106,7 +113,7 @@ export default function Home() {
       </div>
 
       {/* Class Selection Section */}
-      <div className="relative bg-gradient-to-b from-black/90 to-gray-900 py-20">
+      <div className="relative bg-gradient-to-b from-black/90 to-gray-900 py-20" id="classes-section">
         <div className="max-w-7xl mx-auto px-6">
           <h3 className="text-4xl font-bold text-white text-center mb-12">
             Choose Your Class
@@ -122,20 +129,6 @@ export default function Home() {
                   {grade.grade}
                 </h4>
                 <div className="space-y-3">
-                  {/* {grade.subjects.map((subject, idx) => (
-                    <Link
-                      key={idx}
-                      to={`/${grade.link}/${subject.toLowerCase().replace(' ', '-')}`}
-                      className="flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-white/15 transition-all duration-300"
-                    >
-                      <div className="flex items-center space-x-3 text-white">
-                        {getSubjectIcon(subject)}
-                        <span>{subject}</span>
-                      </div>
-                      <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
-                    </Link>
-                  ))} */}
-
                   {grade.subjects.map((subject, idx) => {
                     const subjectKey = subject.toLowerCase().replace(' ', '_');
                     return (

@@ -11,24 +11,21 @@ export default function QuizInterface() {
   const [selectedOption, setSelectedOption] = useState("");
   const [showExplanation, setShowExplanation] = useState(false);
   const [score, setScore] = useState(0);
-  const [isCorrect, setIsCorrect] = useState(null); // track correctness
-  const [attempted, setAttempted] = useState(false); // track if user has tried
+  const [isCorrect, setIsCorrect] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const correctAnswer = questions[currentIndex].answer.trim().toLowerCase();
     const userAnswer = selectedOption.trim().toLowerCase();
 
-    setAttempted(true);
+    const answerIsCorrect = userAnswer === correctAnswer;
+    setIsCorrect(answerIsCorrect);
 
-    if (userAnswer === correctAnswer) {
+    if (answerIsCorrect) {
       setScore(prev => prev + 1);
-      setIsCorrect(true);
-      setShowExplanation(true); // only show explanation when correct
-    } else {
-      setIsCorrect(false);
-      setShowExplanation(false); // don’t show explanation yet
     }
+
+    setShowExplanation(true);  // Always show explanation after submission
   };
 
   const handleNext = () => {
@@ -36,7 +33,6 @@ export default function QuizInterface() {
     setSelectedOption("");
     setShowExplanation(false);
     setIsCorrect(null);
-    setAttempted(false);
   };
 
   const displayGrade = grade.charAt(0).toUpperCase() + grade.slice(1);
@@ -53,26 +49,22 @@ export default function QuizInterface() {
     );
   }
 
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const correctAnswer = questions[currentIndex].answer.trim().toLowerCase();
-  //   const userAnswer = selectedOption.trim().toLowerCase();
-
-  //   if (userAnswer === correctAnswer) {
-  //     setScore(prev => prev + 1);
-  //   }
-
-  //   setShowExplanation(true);
-  // };
-
-  // const handleNext = () => {
-  //   setCurrentIndex(prev => prev + 1);
-  //   setSelectedOption("");
-  //   setShowExplanation(false);
-  // };
-
   const isLastQuestion = currentIndex === questions.length - 1;
+
+  if (currentIndex >= questions.length) {
+    return (
+      <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">🎉 Quiz Completed!</h2>
+        <p className="text-xl text-gray-700">Your Score: {score} / {questions.length}</p>
+        <Link
+          to={`/${grade}/${subject}/practice-quizzes`}
+          className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
+        >
+          Back to Quizzes
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
@@ -81,145 +73,65 @@ export default function QuizInterface() {
       </Link>
 
       <h1 className="text-4xl font-bold text-center mb-4">Class: {displayGrade}</h1>
-      <h2 className="text-2xl font-semibold text-center mb-8">Subject: {displaySubject} | Subtopic: {subtopic.replace('_', ' ')}</h2>
+      <h2 className="text-2xl font-semibold text-center mb-8">
+        Subject: {displaySubject} | Subtopic: {subtopic.replace('_', ' ')}
+      </h2>
 
-      {currentIndex < questions.length ? (
-        <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
-            Q{currentIndex + 1}. {questions[currentIndex].question}
-          </h3>
+      <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">
+          Q{currentIndex + 1}. {questions[currentIndex].question}
+        </h3>
 
+        <form onSubmit={handleSubmit} className="space-y-4">
           {questions[currentIndex].type === "mcq" ? (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              {questions[currentIndex].options.map((option, idx) => (
-                <label key={idx} className="block bg-slate-100 p-3 rounded-lg cursor-pointer">
-                  <input
-                    type="radio"
-                    name="option"
-                    value={option}
-                    checked={selectedOption === option}
-                    onChange={(e) => setSelectedOption(e.target.value)}
-                    className="mr-3"
-                    required
-                  />
-                  {option}
-                </label>
-              ))}
-
-              {/* {!showExplanation ? (
-                <button type="submit" className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                  Submit
-                </button>
-              ) : (
-                // <div className="mt-4">
-                //   <p className="text-gray-700 mb-2">
-                //     Correct Answer: <span className="font-semibold">{questions[currentIndex].answer}</span>
-                //   </p>
-                //   <p className="italic text-gray-500">{questions[currentIndex].explanation}</p>
-                //   <button onClick={handleNext} className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
-                //     Next Question
-                //   </button>
-                // </div>
-                <div className="mt-4">
-                  {isCorrect ? (
-                    <p className="text-green-600 font-bold">✅ Correct Ans!</p>
-                  ) : (
-                    <p className="text-red-600 font-bold">❌ Little wrong, try again.</p>
-                  )}
-
-                  <p className="text-gray-700 mt-2">
-                    Correct Answer: <span className="font-semibold">{questions[currentIndex].answer}</span>
-                  </p>
-                  <p className="italic text-gray-500">{questions[currentIndex].explanation}</p>
-
-                  <button
-                    onClick={handleNext}
-                    className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
-                  >
-                    Next Question
-                  </button>
-                </div>
-
-              )} */}
-              {!attempted ? (
-                <button
-                  type="submit"
-                  className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-                >
-                  Submit
-                </button>
-              ) : (
-                <div className="mt-4">
-                  {isCorrect ? (
-                    <>
-                      <p className="text-green-600 font-bold">✅ Correct Ans!</p>
-                      <p className="text-gray-700 mt-2">
-                        Correct Answer: <span className="font-semibold">{questions[currentIndex].answer}</span>
-                      </p>
-                      <p className="italic text-gray-500">{questions[currentIndex].explanation}</p>
-                      <button
-                        onClick={handleNext}
-                        className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
-                      >
-                        Next Question
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      <p className="text-red-600 font-bold">❌ Little wrong, try again.</p>
-                      <button
-                        type="submit"
-                        className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-                      >
-                        Retry
-                      </button>
-                    </>
-                  )}
-                </div>
-              )}
-
-            </form>
+            questions[currentIndex].options.map((option, idx) => (
+              <label key={idx} className="block bg-slate-100 p-3 rounded-lg cursor-pointer">
+                <input
+                  type="radio"
+                  name="option"
+                  value={option}
+                  checked={selectedOption === option}
+                  onChange={(e) => setSelectedOption(e.target.value)}
+                  className="mr-3"
+                  required
+                />
+                {option}
+              </label>
+            ))
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                value={selectedOption}
-                onChange={(e) => setSelectedOption(e.target.value)}
-                placeholder="Your Answer"
-                className="w-full px-4 py-2 border rounded-lg"
-                required
-              />
-
-              {!showExplanation ? (
-                <button type="submit" className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                  Submit
-                </button>
-              ) : (
-                <div className="mt-4">
-                  <p className="text-gray-700 mb-2">
-                    Correct Answer: <span className="font-semibold">{questions[currentIndex].answer}</span>
-                  </p>
-                  <p className="italic text-gray-500">{questions[currentIndex].explanation}</p>
-                  <button onClick={handleNext} className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
-                    Next Question
-                  </button>
-                </div>
-              )}
-            </form>
+            <input
+              type="text"
+              value={selectedOption}
+              onChange={(e) => setSelectedOption(e.target.value)}
+              placeholder="Your Answer"
+              className="w-full px-4 py-2 border rounded-lg"
+              required
+            />
           )}
-        </div>
-      ) : (
-        <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Quiz Completed!</h2>
-          <p className="text-xl text-gray-700">Your Score: {score} / {questions.length}</p>
-          <Link
-            to={`/${grade}/${subject}/practice-quizzes`}
-            className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
-          >
-            Back to Quizzes
-          </Link>
-        </div>
-      )}
+
+          {!showExplanation ? (
+            <button type="submit" className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+              Submit
+            </button>
+          ) : (
+            <div className="mt-4 p-4 bg-gray-100 rounded">
+              <p className={`font-semibold ${isCorrect ? "text-green-600" : "text-red-600"}`}>
+                {isCorrect ? "✅ Correct!" : "✖ Wrong!"}
+              </p>
+              <p><strong>Correct Answer:</strong> {questions[currentIndex].answer}</p>
+              <p><em>{questions[currentIndex].explanation}</em></p>
+
+              <button
+                type="button"
+                onClick={handleNext}
+                className="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+              >
+                Next Question
+              </button>
+            </div>
+          )}
+        </form>
+      </div>
     </div>
   );
 }

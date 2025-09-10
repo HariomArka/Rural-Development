@@ -1,18 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-// import useScrollToTop from "./hooks/scrollToTop"
 import Home from "./pages/Home";
 import Team from "./pages/Team";
 import ContactUs from "./pages/Contact";
-import QuizPage from './components/QuizPage';
 import VideoLessonsPage from './components/VideoLessonsPage';
-
-// import ProjectileMotionGame from "./games/eleventh/Projectile";
-import QuadraticSolverGame from "./games/tenth/Quadratic";
-import MathRunnerGame from "./games/sixth/mathematics/basic";
-import GeographyExplorerGame from "./games/sixth/geography/basic";
-import GeographyAdventure from "./games/sixth/geography/intermediate";
 
 import Quizzes from "./components/Quizzes";
 import QuizInterface from './components/QuizInterface';
@@ -24,7 +16,6 @@ import ContentPage from "./components/ContentPage";
 function App() {
   return (
     <Router>
-      {/* <useScrollToTop/> */}
       <Navbar />
       <Routes>
         {/* Homepage */}
@@ -39,14 +30,6 @@ function App() {
         {/* Static Team Page */}
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<ContactUs />} />
-
-
-        {/* //game trials */}
-        <Route path="/pro" element={<GeographyAdventure />} />
-        <Route path="/quad" element={<QuadraticSolverGame />} />
-
-
-        <Route path="/:grade/:subject/quiz/:level" element={<QuizPage />} />
 
         <Route path="/:grade/:subject/practice-quizzes" element={<Quizzes />} />
         <Route path="/:grade/:subject/practice-quizzes/:subtopic" element={<QuizInterface />} />
