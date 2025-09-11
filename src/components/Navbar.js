@@ -10,15 +10,39 @@ export default function Navbar() {
   const navLink = (path, label, mobile = false) => (
     <Link
       to={path}
-      onClick={() => setIsMenuOpen(false)} // Close menu on link click
-      className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${mobile ? "block w-full text-left" : ""
-        } ${location.pathname === path
+      onClick={() => setIsMenuOpen(false)}
+      className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+        mobile ? "block w-full text-left" : ""
+      } ${
+        location.pathname === path
           ? "bg-white/20 text-white backdrop-blur-sm shadow-lg"
           : "text-white/80 hover:text-white hover:bg-white/10 backdrop-blur-sm"
-        }`}
+      }`}
     >
       {label}
     </Link>
+  );
+
+  const handleAllClassesClick = (e) => {
+    e.preventDefault();
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollToClasses: true } });
+    } else {
+      document.getElementById('classes-section')?.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
+  const allClassesLink = (mobile = false) => (
+    <a
+      href="#"
+      onClick={handleAllClassesClick}
+      className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+        mobile ? "block w-full text-left" : ""
+      } text-white/80 hover:text-white hover:bg-white/10 backdrop-blur-sm`}
+    >
+      All Classes
+    </a>
   );
 
   return (
@@ -27,6 +51,7 @@ export default function Navbar() {
         <Link
           to="/"
           className="flex items-center space-x-2 group"
+          onClick={() => setIsMenuOpen(false)}
         >
           <img
             src="/logo.png"
@@ -41,22 +66,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-3">
           {navLink("/", "Home")}
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              if (location.pathname !== "/") {
-                navigate("/", { state: { scrollToClasses: true } });
-              } else {
-                document.getElementById('classes-section')?.scrollIntoView({ behavior: 'smooth' });
-              }
-              setIsMenuOpen(false);
-            }}
-            className="px-4 py-2 rounded-lg font-medium text-white/80 hover:text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
-          >
-            All Classes
-          </a>
-
+          {allClassesLink()}
           {navLink("/contact", "Contact Us")}
           {navLink("/team", "Our Team")}
         </div>
@@ -64,38 +74,26 @@ export default function Navbar() {
         {/* Hamburger Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
+          className="md:hidden p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/20"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900 border-t border-white/10 transition-all duration-300 ${isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
-        }`}>
-        <div className="px-6 py-4 space-y-2">
-          {navLink("/", "Home")}
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              if (location.pathname !== "/") {
-                navigate("/", { state: { scrollToClasses: true } });
-              } else {
-                document.getElementById('classes-section')?.scrollIntoView({ behavior: 'smooth' });
-              }
-              setIsMenuOpen(false);
-            }}
-            className="px-4 py-2 rounded-lg font-medium text-white/80 hover:text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
-          >
-            All Classes
-          </a>
-
-          {navLink("/contact", "Contact Us")}
-          {navLink("/team", "Our Team")}
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
+      }`}>
+        <div className="bg-gradient-to-r from-slate-900 via-gray-900 to-slate-900 border-t border-white/10">
+          <div className="px-6 py-4 space-y-2">
+            {navLink("/", "Home", true)}
+            {allClassesLink(true)}
+            {navLink("/contact", "Contact Us", true)}
+            {navLink("/team", "Our Team", true)}
+          </div>
         </div>
       </div>
-
     </nav>
   );
 }
